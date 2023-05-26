@@ -31,7 +31,11 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+<<<<<<< HEAD
     'fblog',
+=======
+    'fblog.app.FblogConfig',
+>>>>>>> parent of 5ed62ba (Edited the value added on the installed app, from app to apps in settings.py, Created a class Post, Made migrations)
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
