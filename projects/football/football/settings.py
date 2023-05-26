@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'fblog.apps.FblogConfig',
+    'fblog',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -82,7 +82,7 @@ DATABASES = {
         'USER': 'felix',
         'PASSWORD': 'postgres',
         'HOST': 'localhost',
-        'PORT': 5432,
+        'PORT': 8000,
 
     }
 }
