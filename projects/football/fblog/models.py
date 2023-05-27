@@ -1,3 +1,15 @@
 from django.db import models
+from django.contrib.auth.models import User
+from django.db import models
 
-# Create your models here.
+class Author(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    profile_picture = models.ImageField(upload_to='profile_pictures/', blank=True, null=True)
+    bio = models.TextField()
+
+class Post(models.Model):
+    title = models.CharField(max_length=100)
+    content = models.TextField()
+    published_date = models.DateTimeField(auto_now_add=True)
+    post_picture = models.ImageField(upload_to='profile_pictures/', blank=True, null=True)
+    author = models.ForeignKey(Author, on_delete=models.CASCADE)
