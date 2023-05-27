@@ -8,7 +8,7 @@ from django.contrib.auth.views import LoginView
 from django.views.generic.edit import FormView
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin # Login Mixin is required for authentication processes
 
 # This will allow a user to view the posts and also to search using keywords that could be cotained in the post
 class PostList(LoginRequiredMixin, ListView):
