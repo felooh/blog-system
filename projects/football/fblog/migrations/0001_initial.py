@@ -31,7 +31,7 @@ class Migration(migrations.Migration):
                 ('content', models.TextField()),
                 ('published_date', models.DateTimeField(auto_now_add=True)),
                 ('post_picture', models.ImageField(blank=True, null=True, upload_to='profile_pictures/')),
-                ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='fblog.author')),
+                ('author', models.ForeignKey(models.Author, on_delete=django.db.models.deletion.CASCADE, to='fblog.author')),
             ],
         ),
     ]
