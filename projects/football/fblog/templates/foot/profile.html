@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football blog</title>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/ef7156c390.js" crossorigin="anonymous"></script>
+    <!-- css file link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="my_nav_bar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="images/pngwing.com.png" width="120" height="100" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="profile.html"><i class="fas fa-user"></i>Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="add_post.html"><i class="fa fa-plus-circle"></i>Create-Post</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html"><i class="fa fa-plus-circle"></i>Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sign_in.html"><i class="fa fa-plus-circle"></i>Sign in</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="logout.html"><i class="fa fa-power-off" aria-hidden="true"></i>Logout</a>
+                </li>
+                <li class="nav-item">
+                    <div class="nav_dropdown">
+                        <button class="btn btn-primary dropdown-toggle">Categories</button>
+                        <div class="dropdown-content">
+                          <a href="#leagues">Leagues</a>
+                          <a href="#players">Players</a>
+                          <a href="#highlights">Highlights</a>
+                          <a href="#news">Latest News</a>
+                          <a href="#videos">Videos</a>
+                        </div>
+                      </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <!-- ------------
+        header part html
+    -------------------- -->
+     <!-- User details section -->
+      <!-- Container with user details and posts -->
+      
+    <div class="container mt-5">
+        <div class="row" style="z-index: -1;">
+            <!-- User details side -->
+            <div class="col-md-4">
+                <h1>Blogger Details</h1>
+                <div class="text-center">
+                    <img src="images/players/player-1.png" alt="User Photo" class="img-fluid rounded-circle" style="width: 200px;">
+                </div>
+                <h3 class="text-center mt-3">Felix Mwendia</h3>
+                <p class="text-center">Number of Posts: 10</p>
+            </div>
+
+            <!-- Blogger's posts side -->
+            <div class="col-md-8">
+                <h2>Recent Posts</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <img src="images/players/player-12.png" class="card-img-top" alt="Post Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Post Title 1</h5>
+                                <div class="d-flex justify-content-between">
+                                    <small class="text-muted">Likes: 10</small>
+                                    <small class="text-muted">Comments: 5</small>
+                                </div>
+                                <p class="card-text mt-2">Author: Felooh</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <img src="images/players/player-7.png" class="card-img-top" alt="Post Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Post Title 2</h5>
+                                <div class="d-flex justify-content-between">
+                                    <small class="text-muted">Likes: 15</small>
+                                    <small class="text-muted">Comments: 3</small>
+                                </div>
+                                <p class="card-text mt-2">Author: Username</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <img src="images/players/player-12.png" class="card-img-top" alt="Post Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Post Title 1</h5>
+                                <div class="d-flex justify-content-between">
+                                    <small class="text-muted">Likes: 10</small>
+                                    <small class="text-muted">Comments: 5</small>
+                                </div>
+                                <p class="card-text mt-2">Author: Felooh</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <img src="images/players/player-12.png" class="card-img-top" alt="Post Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Post Title 1</h5>
+                                <div class="d-flex justify-content-between">
+                                    <small class="text-muted">Likes: 10</small>
+                                    <small class="text-muted">Comments: 5</small>
+                                </div>
+                                <p class="card-text mt-2">Author: Felooh</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more posts here in the same format -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------
+     footer section
+    --------------------- -->
+    <footer class="center" style="    background-image: linear-gradient(to right, #3A1078,#3795BD);">
+        <section class="container-2" id="mr-0">
+            </div>
+            <div class="footer-img">
+                <img src="images/Logo2.png" alt="">
+            </div>
+            <div class="footer-icon">
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+                <a href="#"> <i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="copy-right">
+                <p>Copyright &copy; 2023 Football</p>
+            </div>
+        </section>
+    </footer>
+    <!-- -----------------
+        footer section ends here 
+    ---------------------------- -->
+</body>
+
+</html>

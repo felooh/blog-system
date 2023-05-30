@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Login</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -14,196 +14,46 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"rel="stylesheet"/>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css" rel="stylesheet"/>   
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js"></script>
-        <style>
-            html{
-                height: 100%;
-              }
-              body {
-                background-image: linear-gradient(to right, #00FFCA,#48CBFF);
-                
-                /*Additional Styling*/
-                
-                font-family: 'Lexend Deca', sans-serif;
-                width: 800px; 
-                margin: auto;
-                padding-top: 30px;
-                color: #2E475D;
-              }
-
-              {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                font-family: 'Poppins',sans-serif;
-              }
-              body{
-                height: 100vh;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 10px;
-                {% comment %} background: linear-gradient(135deg, #71b7e6, #9b59b6); {% endcomment %}
-              }
-              .container{
-                max-width: 700px;
-                width: 100%;
-                background-color: #fff;
-                padding: 25px 30px;
-                border-radius: 5px;
-                box-shadow: 0 5px 10px rgba(0,0,0,0.15);
-              }
-              .container .title{
-                font-size: 25px;
-                font-weight: 500;
-                position: relative;
-              }
-              .container .title::before{
-                content: "";
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                height: 3px;
-                width: 30px;
-                border-radius: 5px;
-                background-image: linear-gradient(to right, #00FFCA,#48CBFF);
-            
-            }
-              .content form .user-details{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                margin: 20px 0 12px 0;
-              }
-              form .user-details .input-box{
-                margin-bottom: 15px;
-                width: calc(100% / 2 - 20px);
-              }
-              form .input-box span.details{
-                display: block;
-                font-weight: 500;
-                margin-bottom: 5px;
-              }
-              .user-details .input-box input{
-                height: 45px;
-                width: 100%;
-                outline: none;
-                font-size: 16px;
-                border-radius: 5px;
-                padding-left: 15px;
-                border: 1px solid #ccc;
-                border-bottom-width: 2px;
-                transition: all 0.3s ease;
-              }
-              .user-details .input-box input:focus,
-              .user-details .input-box input:valid{
-                border-color: #9b59b6;
-              }
-               form .gender-details .gender-title{
-                font-size: 20px;
-                font-weight: 500;
-               }
-               form .category{
-                 display: flex;
-                 width: 80%;
-                 margin: 14px 0 ;
-                 justify-content: space-between;
-               }
-               form .category label{
-                 display: flex;
-                 align-items: center;
-                 cursor: pointer;
-               }
-               form .category label .dot{
-                height: 18px;
-                width: 18px;
-                border-radius: 50%;
-                margin-right: 10px;
-                background: #d9d9d9;
-                border: 5px solid transparent;
-                transition: all 0.3s ease;
-              }
-               #dot-1:checked ~ .category label .one,
-               #dot-2:checked ~ .category label .two,
-               #dot-3:checked ~ .category label .three{
-                 background: #9b59b6;
-                 border-color: #d9d9d9;
-               }
-               form input[type="radio"]{
-                 display: none;
-               }
-               form .button{
-                 height: 45px;
-                 margin: 35px 0
-               }
-               form .button input{
-                 height: 100%;
-                 width: 100%;
-                 border-radius: 5px;
-                 border: none;
-                 color: #fff;
-                 font-size: 18px;
-                 font-weight: 500;
-                 letter-spacing: 1px;
-                 cursor: pointer;
-                 transition: all 0.3s ease;
-                 background-image: linear-gradient(to right, #00FFCA,#48CBFF);
-                }
-
-               form .button input:hover{
-                /* transform: scale(0.99); */
-                background-image: linear-gradient(-to right, #00FFCA,#48CBFF);
-                }
-               @media(max-width: 584px){
-               .container{
-                max-width: 100%;
-              }
-              form .user-details .input-box{
-                  margin-bottom: 15px;
-                  width: 100%;
-                }
-                form .category{
-                  width: 100%;
-                }
-                .content form .user-details{
-                  max-height: 300px;
-                  overflow-y: scroll;
-                }
-                .user-details::-webkit-scrollbar{
-                  width: 5px;
-                }
-                }
-                @media(max-width: 459px){
-                .container .content .category{
-                  flex-direction: column;
-                }
-              }
-        </style>
+        <link rel="stylesheet" href="style.css" type="text/css">
     </head>
-    <nav>
-
-    </nav>
-    <body>
-        <div class="container">
-            <div class="title">Login</div>
-            <div class="content">
-              <form action="#">
-                <div class="user-details">
-                  <div class="input-box">
-                    <span class="details">Username</span>
-                    <input type="text" placeholder="Enter your name" required>
-                  </div>
-                  <br><br>
-                  <div class="input-box">
-                    <span class="details">Password</span>
-                    <input type="text" placeholder="Enter your username" required>
-                  </div>
+    
+    <body style="background-image: linear-gradient(to right, #3A1078,#3795BD);"> 
+        <div class="reg_container">
+          <div class="row">
+            <div class="col-lg-10 col-xl-9 mx-auto">
+              <div class="card flex-row my-5 border-0 shadow rounded-3 overflow-hidden">
+                <div class="card-img-left d-none d-md-flex">
+                  <!-- Background image for card set in CSS! -->
                 </div>
-                <div class="button">
-                  <input type="submit" value="Login">
+                <div id="whole_form" class="card-body p-4 p-sm-5">
+                  <h5 class="card-title text-center mb-5 fw-light fs-5" style="font-weight:bolder;">Login Here</h5>
+                  <form>
+      <br><br><br>
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="floatingInputUsername" placeholder="myusername" required autofocus>
+                      <label for="floatingInputUsername">Username</label>
+                    </div>
+                    <hr>
+      
+                    <div class="form-floating mb-3">
+                      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                      <label for="floatingPassword">Password</label>
+                    </div>
+      <br><br><br>
+                    <div class="d-grid mb-2">
+                      <button class="btn btn-lg btn-primary btn-login fw-bold text-uppercase" type="submit">Login</button>
+                    </div>
+      
+                    <a class="d-block text-center mt-2 small" href="sign_in.html"> Have an account? Sign In</a>
+      
+                    <hr class="my-4">
+      
+                  </form>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
+        </div>
     </body>
     <footer>
 
