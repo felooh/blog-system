@@ -5,7 +5,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 
 def index(request):
     
-    return render (request, 'foot/index.html')
+    return render (request, 'fblog/index.html')
 
 def about(request):
     return render(request, 'about.html')
