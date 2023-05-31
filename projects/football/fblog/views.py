@@ -3,9 +3,17 @@ from django.views.generic import ListView, DetailView, CreateView, UpdateView, D
 from .models import Post
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 
+<<<<<<< HEAD
 def index(request):
     
     return render (request, 'fblog/index.html')
+=======
+def home(request):
+    context = {
+        'posts': Post.objects.all()
+    }
+    return render (request, 'home.html', context)
+>>>>>>> v2
 
 def about(request):
     return render(request, 'about.html')

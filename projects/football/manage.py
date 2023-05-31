@@ -5,7 +5,11 @@ import sys
 
 
 def main():
+<<<<<<< HEAD
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'football.localSettings')
+=======
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'football.local_settings')
+>>>>>>> v2
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
